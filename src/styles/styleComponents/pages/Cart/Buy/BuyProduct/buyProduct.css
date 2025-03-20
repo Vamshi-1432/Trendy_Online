@@ -1,0 +1,47 @@
+.buy-item-outer-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--bg-color);
+  z-index: 10;
+  height: 620px;
+  width: 1050px;
+  border-radius: 10px;
+  background-color: var(--pop-color);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.buy-item-title {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.buy-item-close ion-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.buy-item-close ion-icon:hover {
+  color: #ff6f61;
+}
+.buy-item-summary-details {
+  display: flex;
+}
+.buy-item-address-details-container {
+  border-right: 1px solid rgb(49, 48, 48);
+  width: 60%;
+  height: 90%;
+}
+
+.buy-item-payment-details {
+  width: 40%;
+}

@@ -1,0 +1,87 @@
+.input-outer-container {
+  width: 448px;
+  position: relative;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input .input-buttons {
+  align-items: center;
+}
+
+.input-box {
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  padding: 0.5rem;
+  border-radius: 50px;
+  background: transparent;
+  color: var(--font-color);
+  font-size: 0.8em;
+  font-weight: 800;
+}
+
+.input-box::placeholder {
+  color: var(--font-color);
+}
+.input-box:focus {
+  box-shadow: 0 5px 10px 2px;
+}
+
+.input-buttons {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  position: absolute;
+  right: 10px;
+  top: 2%;
+  color: var(--font-color);
+  /* translate: translateY(-50%); */
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 1px;
+  justify-content: space-between;
+}
+
+.input-buttons button {
+  background: none;
+  border: none;
+  color: var(--font-color);
+}
+
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+  .input-outer-container {
+    width: 200px;
+    position: absolute;
+    margin-right: 70px;
+    padding: 2px;
+  }
+
+  .input-box {
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    padding: 0.2rem;
+    border-radius: 50px;
+    background: transparent;
+    color: var(--font-color);
+    font-size: 0.6em;
+    font-weight: 800;
+  }
+
+  .input-buttons {
+    align-items: center;
+    font-size: 28px;
+    position: relative;
+    color: var(--font-color);
+    background: none;
+    border: none;
+    gap: 1px;
+    justify-content: flex-start;
+  }
+}
+/* @media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+* @media only screen and (min-width: 1024px) and (max-width: 1440px) {  */

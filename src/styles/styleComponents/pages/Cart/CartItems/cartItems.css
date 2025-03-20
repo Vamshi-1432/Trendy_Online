@@ -1,0 +1,25 @@
+.cart-container {
+  bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.cart-image {
+  height: 40px;
+  width: 40px;
+}
+
+.cart-items-count {
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: red;
+  border-radius: 50%;
+  padding: 2px 6px;
+}

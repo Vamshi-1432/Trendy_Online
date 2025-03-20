@@ -1,0 +1,17 @@
+.wishlist-main-container {
+  position: fixed;
+  background-color: #b6b9c0;
+  height: 600px;
+  width: 550px;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--bg-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  cursor: grab; /* Indicate draggable */
+  user-select: none;
+}
+
+.wishlist-main-container:active {
+  cursor: grabbing;
+}

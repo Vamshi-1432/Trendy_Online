@@ -1,0 +1,116 @@
+.cart-pay-container {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid var(--font-color);
+  border-radius: 5px;
+  color: #333;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-pay-container h5 {
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 2px;
+}
+
+.cart-pay-container hr {
+  border: 1px solid black;
+}
+
+.cart-pay-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-pay-row label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.custom-dropdown {
+  position: relative;
+  width: 60%;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.selected-coupon {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  display: none;
+  scrollbar-width: none;
+}
+
+.custom-dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.dropdown-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background: #f0f0f0;
+}
+
+.dropdown-option.disabled {
+  color: #ccc;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.coupon-code {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.coupon-description {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Delivery charges */
+.delivery-charge-container {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.cart-pay-total {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.cart-pay-buy-now {
+  background: #cbcaca;
+  border-radius: 10px;
+  padding-inline: 20px;
+}
+
+.cart-pay-buy-now:hover {
+  background-color: #f7f5f5;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}

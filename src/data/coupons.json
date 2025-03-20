@@ -1,0 +1,44 @@
+[
+  {
+    "couponId": 1,
+    "code": "NEWUSER200",
+    "value": 200,
+    "minValue": 1500,
+    "description": "Offer Applicable on min. purchase of ₹1500"
+  },
+  {
+    "couponId": 2,
+    "code": "NEWUSER500",
+    "value": 500,
+    "minValue": 2000,
+    "description": "Offer Applicable on min. purchase of ₹2000"
+  },
+  {
+    "couponId": 3,
+    "code": "NEWUSER700",
+    "value": 700,
+    "minValue": 3500,
+    "description": "Offer Applicable on min. purchase of ₹3500"
+  },
+  {
+    "couponId": 4,
+    "code": "NEWUSER1000",
+    "value": 1000,
+    "minValue": 6000,
+    "description": "Offer Applicable on min. purchase of ₹6000"
+  },
+  {
+    "couponId": 5,
+    "code": "DISCOUNT750",
+    "value": 750,
+    "minValue": 4000,
+    "description": "Offer Applicable on min. purchase of ₹4000"
+  },
+  {
+    "couponId": 6,
+    "code": "DISCOUNT1200",
+    "value": 1200,
+    "minValue": 9000,
+    "description": "Offer Applicable on min. purchase of ₹9000"
+  }
+]

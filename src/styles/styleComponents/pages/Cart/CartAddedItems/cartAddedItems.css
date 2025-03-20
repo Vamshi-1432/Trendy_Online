@@ -1,0 +1,99 @@
+.added-cart-items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.added-cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.added-cart-item-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.added-cart-item-image {
+  height: 80px;
+  width: 80px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.added-cart-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.added-cart-item-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.added-cart-item-price {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.added-cart-item-discount {
+  color: green;
+  font-weight: 700;
+}
+
+.added-cart-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-button {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quantity-button:hover {
+  background-color: #aaa;
+}
+
+.item-quantity {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.added-cart-remove-item-btn {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.added-cart-item-line {
+  width: 90%;
+  margin: 10px 0;
+}
+
+.added-cart-wishlist {
+  font-size: 20px;
+  cursor: pointer;
+}

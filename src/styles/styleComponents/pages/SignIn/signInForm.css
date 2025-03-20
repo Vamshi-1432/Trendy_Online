@@ -1,0 +1,135 @@
+.login-form-container {
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1;
+}
+
+.login-header {
+  text-decoration: underline;
+}
+
+.login-label-user,
+.login-label-password {
+  font-weight: 800;
+  color: var(--font-color);
+}
+
+.login-label-password {
+  margin-top: 10px;
+}
+
+.login-input-user {
+  width: 25rem;
+}
+
+.login-input-user,
+.login-input-password {
+  width: 25rem;
+  height: 2rem;
+  border-radius: 12px;
+  color: var(--font-color);
+  background: var(--bg-color);
+  padding-left: 10px;
+}
+
+.login-pwd-sh-input {
+  width: 25rem;
+}
+
+::placeholder {
+  color: var(--font-color);
+  opacity: 1;
+  font-family: "Times New Roman", Times, serif;
+}
+
+::-ms-input-placeholder {
+  color: var(--font-color);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.login-pwd-sh-input {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.login-pwd-sh-icon {
+  position: absolute;
+  align-items: flex-end;
+  color: var(--font-color);
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-error-message {
+  color: rgb(210, 35, 35);
+  font-size: 15px;
+}
+
+.login-submit-button {
+  margin-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--bg-color);
+  background-color: var(--font-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 1px;
+  width: 25rem;
+}
+
+.login-submit-button:hover {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  box-shadow: 0 0 5px 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+  .login-form-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .login-input-user {
+    width: 19rem;
+  }
+  .login-pwd-sh-input {
+    width: 19rem;
+  }
+
+  .login-submit-button {
+    width: 19rem;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .login-input-user {
+    width: 23rem;
+  }
+
+  .login-pwd-sh-input {
+    width: 23rem;
+  }
+  .login-input-password {
+    width: 23rem;
+  }
+
+  .login-submit-button {
+    width: 23rem;
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .login-form-container {
+    /* margin-bottom: 60%; */
+  }
+}

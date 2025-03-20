@@ -1,0 +1,44 @@
+.term-details-container {
+  text-align: left;
+  height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+  scrollbar-width: none; /* Hides scrollbar */
+  width: 100%;
+}
+
+.term-details-label-container {
+  margin-bottom: 10px; /* Add space between terms */
+}
+
+.term-details-sub-container {
+  background-color: rgb(127, 202, 194);
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Positions title on left and icon on right */
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer; /* Indicates it's clickable */
+}
+
+.term-details-sub-container label {
+  flex-grow: 1; /* Allows the label to take up available space */
+  margin: 0; /* Removes default margin */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.term-details-icon {
+  text-align: right;
+  font-size: 18px; /* Adjust icon size */
+}
+
+.term-details-container ul {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.term-details-container ul li {
+  margin-bottom: 5px; /* Adds space between list items */
+}

@@ -1,0 +1,32 @@
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+:root {
+  --body-background: white;
+  --body-color: black;
+  --link-color: navy;
+  --primary-color: #302ae6;
+  --secondary-color: #536390;
+  --font-color: #232323;
+  --bg-color: #fff;
+  --heading-color: #3e3e3b;
+  --pop-color: #d8f7f3;
+}
+
+[data-theme="dark"] {
+  --body-background: #282c34;
+  --body-color: white;
+  --link-color: rgb(115, 222, 222);
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+  --pop-color: #b4cbcb;
+}
+
+body {
+  margin: 0;
+  background-color: var(--body-background);
+}

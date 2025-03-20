@@ -1,0 +1,47 @@
+.product-details-container {
+  color: var(--font-color);
+  display: block;
+  margin-left: auto;
+  padding: 5px;
+  padding-left: 8px;
+}
+
+.product-details-heading {
+  justify-content: space-between;
+  display: flex;
+}
+
+.product-details-brand-logo {
+  height: 30px;
+  width: auto;
+  margin-top: 5px;
+}
+
+.product-stock {
+  color: rgb(84, 200, 124);
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.product-price-container {
+  display: flex;
+  margin-top: 5px;
+}
+
+.product-price {
+  font-weight: 600;
+}
+
+.product-original-price {
+  margin-left: 10px;
+  color: brown;
+  text-decoration: line-through;
+}
+
+.product-specifications {
+  text-decoration: underline;
+}
+
+.product-warranty {
+  font-weight: 500;
+}

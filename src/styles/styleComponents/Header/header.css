@@ -1,0 +1,255 @@
+.header-outer-container {
+  height: 160px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: 140px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.header-main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  padding-top: 20px;
+}
+
+.header-main-container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.header-title {
+  font-size: 1em;
+  font-weight: 900;
+  list-style-type: none;
+  color: var(--font-color);
+  display: inline;
+  margin-right: 60px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.header-title a {
+  text-decoration: none;
+  color: var(--font-color);
+  transition: 0.3s;
+}
+
+.header-title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.header-wishlist-container {
+  font-size: 30px;
+  color: var(--font-color);
+  cursor: pointer;
+  bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.header-wishitems-count {
+  position: absolute;
+  top: 48px;
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: red;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+.header-cart-container {
+  margin-right: 50px;
+  position: relative;
+  z-index: 20;
+}
+
+.header-logout-container ion-icon {
+  font-size: 35px;
+  cursor: pointer;
+  color: var(--font-color);
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+  .header-main-container ul,
+  .header-wishlist-container,
+  .header-cart-container,
+  .header-logout-container {
+    display: none;
+  }
+
+  .header-menu-container,
+  .header-menu-button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: var(--font-color);
+    margin-left: auto;
+    margin-bottom: auto;
+    padding: 5px;
+  }
+  .header-logo {
+    height: 80px;
+  }
+
+  .header-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .header-sidebar-close {
+    font-size: 35px;
+    margin-left: auto;
+    border: none;
+    background: none;
+  }
+
+  .header-menu-list-container nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px var(--bg-color);
+  }
+
+  .header-menu-list-container nav ul {
+    width: 40%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-menu-list-container nav li {
+    height: 50px;
+  }
+
+  .header-menu-list-container nav a {
+    height: 50%;
+    padding: 0 30px;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  .header-menu-list-container h6 {
+    height: 50%;
+    padding: 0 30px;
+    text-decoration: none;
+    align-items: center;
+    width: 100%;
+    font-size: 1em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+  }
+
+  .header-menu-items {
+    margin-top: 20px;
+    display: flex;
+    font-size: 30px;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .header-menu-container {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header-outer-container {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between;
+  padding: 0 20px; */
+  }
+
+  .header-title {
+    font-size: 18px;
+    font-weight: 300;
+    list-style-type: none;
+    color: var(--font-color);
+    display: inline;
+    margin-right: 15px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  .header-logo {
+    height: 80px;
+    width: auto;
+    border-radius: 5px;
+  }
+
+  .header-wishlist-container {
+    padding: 5px;
+  }
+  .header-cart-container {
+    margin-right: 20px;
+    position: relative;
+    z-index: 20;
+  }
+
+  .header-logout-container ion-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--font-color);
+    margin-top: 5px;
+    display: block;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .header-title {
+    font-size: 20px;
+    font-weight: 300;
+    list-style-type: none;
+    color: var(--font-color);
+    display: inline;
+    margin-right: 45px;
+  }
+}
+
+/* @media only screen and (min-width: 1024px) and (max-width: 1440px) { */

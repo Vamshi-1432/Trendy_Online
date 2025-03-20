@@ -1,0 +1,162 @@
+.mobiles-outer-container {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 200vw;
+  padding-bottom: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.mobiles-heading-containerh4 {
+  text-align: center;
+  color: var(--font-color);
+  /* margin-bottom: 10px; */
+}
+
+.mobiles-heading-containerhr {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  margin-bottom: 20px;
+  border-top: 2px solid var(--font-color);
+}
+
+.mobiles-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.mobiles-item {
+  list-style-type: none;
+}
+
+.mobiles-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background: var(--bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 320px;
+  height: 590px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.mobiles-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding-bottom: 5px;
+}
+.mobiles-brand-logo {
+  height: 20px;
+  width: auto;
+  padding: 2px;
+  margin-bottom: 2px;
+}
+.mobiles-image {
+  height: 350px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.mobiles-title {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--font-color);
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.mobiles-description {
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--font-color);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.mobiles-brand {
+  font-size: 0.9em;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--font-color);
+  font-weight: 400;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.mobiles-price-container {
+  display: block;
+}
+.mobiles-price {
+  font-size: 0.9em;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--font-color);
+  margin-bottom: 5px;
+}
+
+.price {
+  color: var(--font-color);
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-size: 0.9em;
+  color: #e63946;
+}
+
+.mobiles-discount {
+  font-size: 1em;
+  color: #4caf50;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.mobiles-button-container {
+  display: flex;
+}
+
+.mobiles-button {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--font-color);
+  color: var(--bg-color);
+  padding: 5px;
+}
+.mobiles-button:hover {
+  cursor: pointer;
+  background-color: rgba(var(--font-color), 0.5);
+  color: var(--font-color);
+}
+
+.mobiles-button-arrow {
+  height: 25px;
+  width: 25px;
+  /* margin-bottom: 15px; */
+  padding-right: 3px;
+}
+
+.mobiles-button-wishlist {
+  border: none;
+  background: none;
+  color: var(--font-color);
+  font-size: 30px;
+  margin-top: 5px;
+  cursor: pointer;
+}

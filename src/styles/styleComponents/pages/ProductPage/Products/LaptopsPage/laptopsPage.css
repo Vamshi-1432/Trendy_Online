@@ -1,0 +1,222 @@
+.menu-laptops-container {
+  margin-top: 8%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #e0e0e0;
+  height: 620px;
+  width: 60%;
+  border-radius: 5px;
+  display: flex;
+}
+
+.menu-laptops-image-container1 {
+  border-right: 1px solid #e0e0e0;
+  height: 100%;
+  width: 15%;
+  display: block;
+  justify-content: center;
+  padding: 10px;
+}
+
+.menu-laptops-back-button {
+  border: none;
+  background: none;
+  color: var(--font-color);
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.menu-laptops-image-container2 {
+  border-right: 1px solid #e0e0e0;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu-image-laptops {
+  max-height: 90%;
+  max-width: 90%;
+  object-fit: contain;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-laptops-image-container3 {
+  height: 100%;
+  width: 45%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .menu-laptops-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+
+  .menu-laptops-image-container1 {
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .menu-laptops-images-container {
+    display: none;
+  }
+
+  .menu-laptops-image-container2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .menu-laptops-image-container3 {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+  }
+
+  .menu-image-laptops {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-laptops-images-container {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .menu-laptops-container {
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    border: none;
+  }
+
+  .menu-laptops-image-container1 {
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .menu-laptops-images-container {
+    display: none;
+  }
+
+  .menu-laptops-image-container2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: none;
+  }
+
+  .menu-laptops-image-container3 {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+  }
+  .menu-image-laptops {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) and (orientation: landscape) {
+  .menu-laptops-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+
+  .menu-laptops-image-container1 {
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .menu-laptops-images-container {
+    display: none;
+  }
+
+  .menu-laptops-image-container2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .menu-laptops-image-container3 {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+  }
+
+  .menu-image-laptops {
+    width: 80%;
+    height: 50%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu-laptops-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-laptops-image-container1 {
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .menu-laptops-images-container {
+    display: none;
+  }
+
+  .menu-laptops-image-container2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: none;
+  }
+
+  .menu-laptops-image-container3 {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+  }
+
+  .menu-image-laptops {
+    width: 80%;
+    height: 50%;
+  }
+}

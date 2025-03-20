@@ -1,0 +1,15 @@
+.terms-container {
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.terms-container-label {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(61, 102, 135);
+}
+
+.terms-container-label:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,404 @@
+.cameras-outer-container {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding-bottom: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cameras-heading-containerh4 {
+  text-align: center;
+  color: var(--font-color);
+  /* margin-bottom: 10px; */
+}
+.cameras-outer-container {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 200vw;
+  padding-bottom: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cameras-heading-containerh4 {
+  text-align: center;
+  color: var(--font-color);
+  /* margin-bottom: 10px; */
+}
+
+.cameras-heading-containerhr {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  margin-bottom: 20px;
+  border-top: 2px solid var(--font-color);
+}
+
+.cameras-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.cameras-item {
+  list-style-type: none;
+}
+
+.cameras-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background: var(--bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 450px;
+  height: 500px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.cameras-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding-bottom: 5px;
+}
+.cameras-brand-logo {
+  height: 20px;
+  width: auto;
+  padding: 2px;
+  margin-bottom: 2px;
+}
+.cameras-image {
+  height: 360px;
+  width: 380px;
+  border-radius: 5px;
+}
+
+.cameras-title {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--font-color);
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cameras-description {
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--font-color);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.cameras-brand {
+  font-size: 0.9em;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--font-color);
+  font-weight: 400;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.cameras-price-container {
+  display: block;
+}
+.cameras-price {
+  font-size: 0.9em;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--font-color);
+  margin-bottom: 5px;
+}
+
+.price {
+  color: var(--font-color);
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-size: 0.9em;
+  color: #e63946;
+}
+
+.cameras-discount {
+  font-size: 1em;
+  color: #4caf50;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cameras-button-container {
+  display: flex;
+}
+
+.cameras-button {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--font-color);
+  color: var(--bg-color);
+  padding: 5px;
+}
+.cameras-button:hover {
+  cursor: pointer;
+  background-color: rgba(var(--font-color), 0.5);
+  color: var(--font-color);
+}
+
+.cameras-button-arrow {
+  height: 25px;
+  width: 25px;
+  /* margin-bottom: 15px; */
+  padding-right: 3px;
+}
+
+.cameras-button-wishlist {
+  border: none;
+  background: none;
+  color: var(--font-color);
+  font-size: 30px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.cameras-heading-containerhr {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  margin-bottom: 20px;
+  border-top: 2px solid var(--font-color);
+}
+
+.cameras-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.cameras-item {
+  list-style-type: none;
+}
+
+.cameras-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background: var(--bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 450px;
+  height: 500px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.cameras-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding-bottom: 5px;
+}
+.cameras-brand-logo {
+  height: 30px;
+  width: auto;
+  /* padding: 2px; */
+  margin-bottom: 2px;
+  background-color: #ddd;
+  border-radius: 2px;
+}
+.cameras-image {
+  height: 250px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.cameras-title {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--font-color);
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cameras-description {
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--font-color);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.cameras-brand {
+  font-size: 0.9em;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--font-color);
+  font-weight: 400;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.cameras-price-container {
+  display: block;
+}
+.cameras-price {
+  font-size: 0.9em;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--font-color);
+  margin-bottom: 5px;
+}
+
+.price {
+  color: var(--font-color);
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-size: 0.9em;
+  color: #e63946;
+}
+
+.cameras-discount {
+  font-size: 1em;
+  color: #4caf50;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cameras-button-container {
+  display: flex;
+}
+
+.cameras-button {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--font-color);
+  color: var(--bg-color);
+  padding: 5px;
+}
+.cameras-button:hover {
+  cursor: pointer;
+  background-color: rgba(var(--font-color), 0.5);
+  color: var(--font-color);
+}
+
+.cameras-button-arrow {
+  height: 25px;
+  width: 25px;
+  /* margin-bottom: 15px; */
+  padding-right: 3px;
+}
+
+.cameras-button-wishlist {
+  border: none;
+  background: none;
+  color: var(--font-color);
+  font-size: 30px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .cameras-outer-container {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .cameras-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 520px;
+    padding-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 576px) and (orientation: landscape) {
+  .cameras-outer-container {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .cameras-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 580px;
+    padding-bottom: 5px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .cameras-outer-container {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .cameras-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 550px;
+    padding-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) and (orientation: landscape) {
+  .cameras-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    padding-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .cameras-outer-container {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* padding-bottom: 50px;
+    padding: 20px; */
+    box-sizing: border-box;
+  }
+}
+/* @media only screen and (min-width: 1025px) and (max-width: 1440px) { */

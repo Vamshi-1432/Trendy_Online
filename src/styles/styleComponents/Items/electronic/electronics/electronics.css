@@ -1,0 +1,27 @@
+.electronics-outer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 20px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.electronics-heading-containerh4 {
+  margin-right: auto;
+  margin-left: 25px;
+  color: var(--font-color);
+  margin-bottom: 1px;
+}
+
+.electronics-heading-containerhr {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border: none;
+  border-top: 2px solid var(--font-color);
+}

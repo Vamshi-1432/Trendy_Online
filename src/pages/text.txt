@@ -1,0 +1,170 @@
+import React, { useState } from "react";
+import "./signUpForm.css";
+import Icon from "react-icons-kit";
+import { eyeOff } from "react-icons-kit/feather/eyeOff";
+import { eye } from "react-icons-kit/feather/eye";
+
+const SignUpForm = () => {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [rePassword, setRePassword] = useState("");
+  const [userMessage, setUserMessage] = useState("");
+  const [emailMessage, setEmailMessage] = useState("");
+  const [pwdMessage, setPwdMessage] = useState("");
+  const [pwdReMessage, setRePwdMessage] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setConfirmShowPassword] = useState(false);
+  const [isValid, setIsValid] = useState(false);
+  const isValidEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+  const isValidPassword =
+    /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/;
+
+  const handleUsername = (e) => {
+    const value = e.target.value.trim();
+    setUsername(value);
+    if (!value) {
+      setUserMessage("Full Name should not be empty");
+    } else {
+      setIsValid(true);
+      setUserMessage("");
+    }
+  };
+
+  const validateEmail = () => {
+    if (isValidEmail.test(email)) {
+      setEmailMessage("");
+      setIsValid(true);
+    } else {
+      if (email.length > 0) setEmailMessage("Invalid entered Email");
+      else setEmailMessage("Email should not be empty");
+    }
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    if (emailMessage && isValidEmail.test(e.target.value)) {
+      setEmailMessage("");
+    }
+  };
+
+  const handlePwdChange = (e) => {
+    const value = e.target.value;
+    setPassword(value);
+    if (!isValidPassword.test(value)) {
+      if (value.length > 0) setPwdMessage("Invalid entered Password");
+      else setPwdMessage("Password should not be empty");
+    } else {
+      setPwdMessage("");
+    }
+
+    if (rePassword && value !== rePassword) {
+      setRePwdMessage("Passwords do not match");
+    } else {
+      setRePwdMessage("");
+    }
+  };
+
+  const handleRePwdChange = (e) => {
+    const value = e.target.value;
+    setRePassword(value);
+    if (value !== password) {
+      setRePwdMessage("Passwords do not match");
+    } else {
+      setRePwdMessage("");
+    }
+  };
+
+  const handleValidateUser = (e) => {
+    e.preventDefault();
+    handleUsername({ target: { value: username } });
+    validateEmail();
+    if (!password) setPwdMessage("Password should not be empty");
+    if (!rePassword) setRePwdMessage("Confirm Password should not be empty");
+
+    const user = {
+      email,
+      password,
+    };
+    {
+      isValid && localStorage.setItem("user", JSON.stringify(user));
+      setUsername("");
+      setEmail("");
+      setPassword("");
+      setRePassword("");
+    }
+  };
+
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
+  const handleConfirmShowPassword = () => {
+    setConfirmShowPassword(!showConfirmPassword);
+  };
+
+  const storeduser = JSON.parse(localStorage.getItem("user"));
+  console.log(storeduser);
+  return (
+    <form className="signup-form-container">
+      <h2 className="signup-header">Sign Up</h2>
+      <label className="signup-label-Fname">Enter Full Name</label>
+      <input
+        className="signup-input-Fname"
+        placeholder="Enter Full Name"
+        type="text"
+        value={username}
+        onChange={handleUsername}
+      />
+      {userMessage && <p className="login-error-message">{userMessage}</p>}
+
+      <label className="signup-label-email">Enter Email</label>
+      <input
+        className="signup-input-email"
+        placeholder="Enter Email"
+        type="email"
+        value={email}
+        onChange={handleEmailChange}
+      />
+      {emailMessage && <p className="login-error-message">{emailMessage}</p>}
+
+      <label className="signup-label-password">Create Password</label>
+      <div className="signup-pwd-sh-input">
+        <input
+          className="signup-input-password"
+          placeholder="Create New Password"
+          type={showPassword ? "text" : "password"}
+          value={password}
+          onChange={handlePwdChange}
+        />
+        <span className="signup-pwd-sh-icon" onClick={handleShowPassword}>
+          <Icon icon={showPassword ? eyeOff : eye} />
+        </span>
+      </div>
+      {pwdMessage && <p className="signup-error-message">{pwdMessage}</p>}
+
+      <label className="signup-label-password">Confirm Password</label>
+      <div className="signup-pwd-sh-input">
+        <input
+          className="signup-input-password"
+          placeholder="Confirm New Password"
+          type={showConfirmPassword ? "text" : "password"}
+          value={rePassword}
+          onChange={handleRePwdChange}
+        />
+        <span
+          className="signup-pwd-sh-icon"
+          onClick={handleConfirmShowPassword}
+        >
+          <Icon icon={showConfirmPassword ? eyeOff : eye} />
+        </span>
+      </div>
+      {pwdReMessage && <p className="signup-error-message">{pwdReMessage}</p>}
+      <button className="signup-button" onClick={handleValidateUser}>
+        Submit
+      </button>
+    </form>
+  );
+};
+
+export default SignUpForm;

@@ -1,0 +1,92 @@
+.added-wishList-items-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px 2px;
+  padding: 10px;
+}
+
+.added-wishList-item-image {
+  height: 100px;
+  width: 80px;
+  border-radius: 5px;
+}
+
+.added-wishList-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.added-wishList-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.added-wishList-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 10px;
+}
+
+.added-wishList-item-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.added-wishList-item-desc {
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.added-wishList-item-price {
+  font-size: 14px;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.added-wishList-item-discount {
+  color: green;
+  font-weight: 700;
+}
+
+.added-wishList-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* margin-top: 5px; */
+}
+
+.added-wishlist-add-cart-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.added-wishlist-add-cart {
+  width: 25px;
+  height: 25px;
+}
+
+.added-wishList-remove-item-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.added-wishList-remove-item-btn ion-icon {
+  font-size: 20px;
+}

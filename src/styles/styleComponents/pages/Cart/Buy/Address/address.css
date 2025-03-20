@@ -1,0 +1,79 @@
+* {
+  font-weight: 100;
+}
+
+.address-form-container {
+  margin: 10px;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  scrollbar-width: none;
+}
+
+.address-form-container label {
+  display: block;
+  font-weight: 550;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.address-form-container input {
+  border: none;
+  border-bottom: 1px solid var(--font-color);
+  width: 100%;
+  margin-top: 5px;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--font-color);
+}
+
+.address-form-error {
+  color: rgb(244, 23, 23);
+  font-size: 12px;
+}
+
+.address-form-name-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.address-name-field {
+  width: 48%;
+}
+
+.address-name-field label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.address-form-firstname-input,
+.address-form-lastname-input {
+  width: 100%;
+}
+
+.address-form-area-inputs {
+  margin-top: 10px;
+}
+
+.address-form-area-label {
+}
+
+.address-form-textarea {
+  width: 70%;
+  max-height: 80px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--font-color);
+  scrollbar-width: none;
+}
+
+.address-form-textarea:focus {
+  outline: none;
+  border-bottom: 1px solid var(--font-color);
+}

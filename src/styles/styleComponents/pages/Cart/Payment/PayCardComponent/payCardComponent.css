@@ -1,0 +1,90 @@
+.pay-card-holder {
+  width: 350px;
+}
+.labeltxt {
+  font-size: 15px;
+  color: var(--first-color);
+  font-weight: 500;
+  margin-top: 5px;
+}
+.image {
+  position: relative;
+  top: 40px;
+  right: 13px;
+  width: 30px;
+  height: 25px;
+  border: none;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.inputtxt {
+  color: var(--four-color) !important;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 12px 10px;
+  /* border: 2px solid var(--first-color); */
+  border-radius: 7px;
+  background-color: #f7f9fc; /* Light pastel gray */
+}
+
+.inputtxt:focus {
+  background-color: #e8f0fe; /* Subtle light blue on focus */
+  outline: none; /* Removes the default focus outline */
+  border-color: var(--second-color); /* Highlight border color */
+}
+
+.input-card-holder {
+  text-transform: uppercase;
+}
+.exptxt {
+  color: var(--first-color);
+  font-size: 15px;
+  font-weight: 500;
+}
+.cvvtxt {
+  color: var(--first-color);
+  font-size: 15px;
+  font-weight: 500;
+}
+.expiry {
+  padding: 10px 10px;
+  width: 120px;
+  font-weight: bold;
+  border: 2px solid var(--first-color);
+  border-radius: 7px;
+  font-size: 13px;
+}
+.cvv {
+  padding: 10px 10px;
+  width: 120px;
+  border: 2px solid var(--first-color);
+  border-radius: 7px;
+  font-size: 13px;
+}
+.cancel {
+  color: var(--first-color);
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+.cancel:hover,
+.cancel:focus {
+  box-shadow: none;
+  color: var(--third-color);
+  background-color: var(--first-color);
+}
+.payment {
+  font-weight: 600;
+  font-size: 14px;
+  background-color: var(--second-color);
+  border: none;
+  width: 150px;
+  color: var(--third-color);
+  padding: 15px 10px;
+  border-radius: 11px;
+  cursor: pointer;
+}
+.payment:hover {
+  color: var(--third-color);
+}

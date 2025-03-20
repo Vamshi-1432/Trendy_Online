@@ -1,0 +1,81 @@
+.cart-main-container {
+  position: fixed;
+  background-color: #b6b9c0;
+  height: 600px;
+  width: 700px;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--bg-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  cursor: grab;
+  user-select: none;
+}
+
+.cart-main-container:active {
+  cursor: grabbing;
+}
+
+.cart-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 10px;
+}
+
+.cart-items-title {
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.cart-close {
+  font-size: 30px;
+  color: #000;
+  cursor: pointer;
+}
+
+.cart-close:hover {
+  color: rgb(220, 78, 78);
+}
+
+.cart-line {
+  width: 98%;
+  margin: 10px auto;
+  border: 1px solid #000;
+}
+
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  gap: 20px;
+}
+
+.cart-content > * {
+  flex: 1;
+}
+
+.cart-container {
+  border: none;
+  border-radius: 8px;
+  background: none;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.cart-pay-value {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+.cart-items-receipt {
+  margin-left: auto;
+}

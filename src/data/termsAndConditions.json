@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "1.Introduction",
+    "description1": "1.1 These Terms apply to all users of the app, including visitors, customers, vendors, and merchants.",
+    "description2": "1.2 Please read these Terms carefully before using the platform."
+  },
+  {
+    "id": 2,
+    "title": "2.Eligibility",
+    "description1": "2.1 You must be at least 18 years old to use our services.",
+    "description2": "2.2 By creating an account or making a purchase, you represent that all information provided is accurate and complete."
+  },
+  {
+    "id": 3,
+    "title": "3.User Accounts",
+    "description1": "3.1 You are responsible for maintaining the confidentiality of your account credentials.",
+    "description2": "3.2 Any activity under your account will be deemed as your activity. Notify us immediately of unauthorized access."
+  },
+  {
+    "id": 4,
+    "title": "4.Orders and Payments",
+    "description1": "4.1 All orders placed through the platform are subject to product availability and confirmation of payment.",
+    "description2": "4.2 Prices listed on the platform are inclusive of applicable taxes unless stated otherwise."
+  },
+  {
+    "id": 5,
+    "title": "5.Shipping and Delivery",
+    "description1": "5.1 Delivery timelines are estimates and may vary based on location and other factors.",
+    "description2": "5.2 We are not responsible for delays caused by external factors such as courier issues, natural calamities, or strikes."
+  },
+  {
+    "id": 6,
+    "title": "6.Returns and Refunds",
+    "description1": "6.1 Products may be returned or exchanged in accordance with our Return and Refund Policy.",
+    "description2": "6.2 Refunds will only be processed to the original payment method."
+  },
+  {
+    "id": 7,
+    "title": "7.User Conduct",
+    "description1": "7.1 You agree not to:",
+    "descriptionSub": [
+      "Use the platform for illegal activities.",
+      "Transmit malware, spam, or harmful content.",
+      "Violate any intellectual property rights or other rights of any third party."
+    ],
+    "description2": "7.2 Any violation may result in account suspension or legal action."
+  },
+  {
+    "id": 8,
+    "title": "8.Intellectual Property",
+    "description1": "8.1 All content on the platform (logos, images, text, and software) is owned by or licensed to e-Shopping.",
+    "description2": "8.2 You may not reproduce, distribute, or use any content without prior written permission."
+  },
+  {
+    "id": 9,
+    "title": "9.Privacy Policy",
+    "description1": "9.1 Your personal information will be handled according to our Privacy Policy, which forms part of these Terms.",
+    "description2": "9.2 By using the app, you consent to the collection and use of your data as described in the Privacy Policy."
+  },
+  {
+    "id": 10,
+    "title": "10.Limitation of Liability",
+    "description1": "10.1 To the fullest extent permitted by law, e-Shopping will not be liable for any:",
+    "descriptionSub": [
+      { "descSub1": "Indirect, incidental, or consequential damages." },
+      {
+        "descSub2": "Loss of profits, data, or goodwill."
+      }
+    ],
+    "description2": "10.2 Our maximum liability shall not exceed the total value of the products purchased."
+  },
+  {
+    "id": 11,
+    "title": "11.Third-Party Links",
+    "description1": "11.1 The platform may contain links to third-party websites or services. We are not responsible for their content or policies."
+  },
+  {
+    "id": 12,
+    "title": "12.Modifications",
+    "description1": "12.1 We reserve the right to modify these Terms at any time. Changes will be effective upon posting on the app.",
+    "description2": "12.2 Continued use of the platform after changes signifies your acceptance of the updated Terms."
+  },
+  {
+    "id": 13,
+    "title": "13.Governing Law",
+    "description1": "13.1 These Terms are governed by the laws of Jurisdiction.",
+    "description2": "13.2 Any disputes arising will be subject to the exclusive jurisdiction of courts."
+  },
+  {
+    "id": 14,
+    "title": "14.Contact Us",
+    "description1": "For questions or concerns regarding these Terms, please contact us:",
+    "description2": [
+      {
+        "type": "Email",
+        "details": "support@unifiedcommerce.com"
+      },
+      {
+        "type": "Phone",
+        "details": "+91-1234567890"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "15.Acknowledgment",
+    "description1": "By using the platform, you acknowledge that you have read, understood, and agree to these Terms and Conditions."
+  }
+]

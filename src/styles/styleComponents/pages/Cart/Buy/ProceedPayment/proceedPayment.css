@@ -1,0 +1,18 @@
+.payment-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.payment-button {
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-family: serif;
+  font-weight: 300;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: none;
+}
