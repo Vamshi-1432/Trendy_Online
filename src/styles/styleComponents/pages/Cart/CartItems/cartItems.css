@@ -10,6 +10,7 @@
 .cart-image {
   height: 40px;
   width: 40px;
+  z-index: 0;
 }
 
 .cart-items-count {

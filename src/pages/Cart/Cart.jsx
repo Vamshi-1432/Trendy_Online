@@ -26,7 +26,7 @@ const Cart = () => {
   };
 
   const handleMouseDown = (e) => {
-    if (isMobile) return; // Disable dragging on mobile
+    if (isMobile) return; // Disable dragging on Tablet
     setDragging(true);
     const rect = cartRef.current.getBoundingClientRect();
     setOffset({ x: e.clientX - rect.left, y: e.clientY - rect.top });
@@ -95,7 +95,7 @@ const Cart = () => {
       <hr className="cart-line" />
       <div className="cart-content">
         <CartContainer />
-        {items.length > 0 && <CartPayValue />}
+        {items.length > 0 && <CartPayValue isMobile={isMobile} />}
       </div>
     </div>
   );

@@ -88,7 +88,7 @@
 .header-cart-container {
   margin-right: 50px;
   position: relative;
-  z-index: 20;
+  /* z-index: 20; */
 }
 
 .header-logout-container ion-icon {
@@ -228,7 +228,7 @@
   .header-cart-container {
     margin-right: 20px;
     position: relative;
-    z-index: 20;
+    /* z-index: 20; */
   }
 
   .header-logout-container ion-icon {

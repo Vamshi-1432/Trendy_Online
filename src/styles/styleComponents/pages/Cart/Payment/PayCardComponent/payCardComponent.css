@@ -23,15 +23,14 @@
   font-weight: bold;
   font-size: 13px;
   padding: 12px 10px;
-  /* border: 2px solid var(--first-color); */
   border-radius: 7px;
-  background-color: #f7f9fc; /* Light pastel gray */
+  background-color: #f7f9fc;
 }
 
 .inputtxt:focus {
-  background-color: #e8f0fe; /* Subtle light blue on focus */
-  outline: none; /* Removes the default focus outline */
-  border-color: var(--second-color); /* Highlight border color */
+  background-color: #d8dce4;
+  outline: none;
+  border-color: var(--second-color);    
 }
 
 .input-card-holder {

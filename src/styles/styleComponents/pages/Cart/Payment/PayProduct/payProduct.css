@@ -33,3 +33,28 @@
 .payproduct-header ion-icon:hover {
   color: #6d090f;
 }
+
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+  .payproduct-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid #ccc;
+    background-color: #829ba7;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    overflow-y: auto;
+  }
+
+  .payproduct-header ion-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+  }
+}
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) {}
+ @media only screen and (min-width: 1024px) and (max-width: 1440px) { */

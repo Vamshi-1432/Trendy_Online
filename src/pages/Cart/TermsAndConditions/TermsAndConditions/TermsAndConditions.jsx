@@ -2,7 +2,7 @@ import React from "react";
 import "../../../../styles/styleComponents/pages/Cart/TermsAndConditions/TermsAndConditions/termsAndConditions.css";
 import TermsAndConditionsTitle from "../TermsAndConditionsTitle/TermsAndConditionsTitle";
 
-const TermsAndConditions = (showTerms, setShowTerms) => {
+const TermsAndConditions = ({ showTerms, setShowTerms }) => {
   const handleShowTerms = () => {
     setShowTerms(() => !showTerms);
   };

@@ -13,3 +13,19 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+  .terms-container {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .terms-container {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}

@@ -12,7 +12,7 @@ import {
 } from "../../../../redux/cartSlice/buyProductSlice";
 import emailjs from "@emailjs/browser";
 
-const PaymentConfirm = (cancel) => {
+const PaymentConfirm = ({ cancel }) => {
   const [selectedOption, setSelectedOption] = useState("");
   const [receiptId, setReceiptId] = useState("");
   const [paymentDone, setPaymentDone] = useState(false);

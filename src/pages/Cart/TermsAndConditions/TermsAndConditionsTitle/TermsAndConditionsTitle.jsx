@@ -8,6 +8,7 @@ const TermsAndConditionsTitle = () => {
   const handleDisplayDetails = (id) => {
     setShowDetails((prevId) => (prevId === id ? null : id));
   };
+  console.log(data);
 
   return (
     <div className="term-details-container">

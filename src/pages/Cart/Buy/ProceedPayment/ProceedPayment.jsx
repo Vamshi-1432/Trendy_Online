@@ -7,9 +7,9 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import "../../../../styles/styleComponents/pages/Cart/Buy/ProceedPayment/proceedPayment.css";
 import TermsAndConditions from "../../TermsAndConditions/TermsAndConditions/TermsAndConditions";
-import { setShowCart } from "../../../../redux/cartSlice/cartSlice";
+ 
 
-const ProceedPayment = (enablePay) => {
+const ProceedPayment = ({ enablePay }) => {
   const [showTerms, setShowTerms] = useState(false);
   const dispatch = useDispatch();
 
@@ -21,21 +21,18 @@ const ProceedPayment = (enablePay) => {
   const deliveryCharges =
     paymentAmount.deliveryCharges !== undefined
       ? paymentAmount.deliveryCharges
-      : 0; // Default to 0 if not defined
+      : 0;
   const grandTotal = paymentAmount.grandTotal || total + deliveryCharges;
 
   const handlePayAmount = () => {
-    // Dispatch calculated values
     dispatch(setPaymentDetails({ total, deliveryCharges, grandTotal }));
     dispatch(setEnableBuy());
     dispatch(setEnableProceedPayment());
-    dispatch(setShowCart(false));
   };
 
   return (
     <div
-      className="payment-container"
-      style={{ marginTop: showTerms ? "" : "50%" }}
+      className={showTerms ? "payment-container-terms" : "payment-container"}
     >
       <button
         disabled={!enablePay}

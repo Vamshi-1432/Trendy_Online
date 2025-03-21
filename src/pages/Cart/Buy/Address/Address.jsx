@@ -3,7 +3,7 @@ import "../../../../styles/styleComponents/pages/Cart/Buy/Address/address.css";
 import { setShippingDetails } from "../../../../redux/cartSlice/buyProductSlice";
 import { useDispatch } from "react-redux";
 
-const Address = (setEnablePay) => {
+const Address = ({ setEnablePay }) => {
   const dispatch = useDispatch();
   const [userEmail, setEmail] = useState("");
   const [emailMessage, setEmailMessage] = useState("");

@@ -32,7 +32,6 @@ const BuyProduct = () => {
           </div>
         </div>
         <div className="buy-item-payment-details">
-          {/* <Payment enablePay={enablePay} /> */}
           <ProceedPayment enablePay={enablePay} />
         </div>
       </div>

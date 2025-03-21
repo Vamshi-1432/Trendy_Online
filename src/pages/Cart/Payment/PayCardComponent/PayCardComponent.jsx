@@ -4,7 +4,7 @@ import rupayCard from "../../../../images/Cart/Payment/rupay.png";
 import masterCard from "../../../../images/Cart/Payment/masterCard.png";
 import visaCard from "../../../../images/Cart/Payment/visa.png";
 
-const PayCardComponent = (setPayButton) => {
+const PayCardComponent = ({ setPayButton }) => {
   const [cardType, setCardType] = useState("");
   const [cardImage, setCardImage] = useState("");
   const [formattedCardNumber, setFormattedCardNumber] = useState("");

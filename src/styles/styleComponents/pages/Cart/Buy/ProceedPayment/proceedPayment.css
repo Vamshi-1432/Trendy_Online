@@ -3,6 +3,15 @@
   align-items: center;
   text-align: center;
   height: 100%;
+  margin-top: 50%;
+}
+
+.payment-container-terms {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  margin-top: 5%;
 }
 
 .payment-button {
@@ -16,3 +25,42 @@
   margin-bottom: 20px;
   border: none;
 }
+
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+  .payment-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .payment-container-terms {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .payment-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .payment-container-terms {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    /* margin-top: 15px; */
+  }
+}
+/* @media only screen and (min-width: 1024px) and (max-width: 1440px) { */

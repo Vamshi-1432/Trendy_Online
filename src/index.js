@@ -6,10 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router";
 import { Provider } from "react-redux";
 import { ReduxStore } from "./redux/ReduxStore";
-// import WishList from "./pages/WishList/WishList/WishList";
-// import Card from "./pages/Cart/Cart";
-
-// import Cart from "./pages/Cart/Cart";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,7 +13,6 @@ root.render(
   <Provider store={ReduxStore}>
     <BrowserRouter>
       <App />
-      {/* <Cart /> */}
     </BrowserRouter>
   </Provider>
   // </React.StrictMode>

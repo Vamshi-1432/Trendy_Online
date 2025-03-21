@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../../styles/styleComponents/pages/Cart/TermsAndConditions/TermsAndConditionsDetails/termsAndConditionsDetails.css";
 
-const TermsAndConditionsDetails = (details) => {
+const TermsAndConditionsDetails = ({ details }) => {
   const { description1, description2, descriptionSub } = details;
 
   return (

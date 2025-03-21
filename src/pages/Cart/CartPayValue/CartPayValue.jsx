@@ -6,12 +6,14 @@ import {
   setPaymentDetails,
 } from "../../../redux/cartSlice/buyProductSlice";
 import coupons from "../../../data/coupons.json";
+import { setShowCart } from "../../../redux/cartSlice/cartSlice";
 
-const CartPayValue = () => {
+const CartPayValue = ({ isMobile }) => {
   const items = useSelector((store) => store.cart.items);
   const [selectedCoupon, setSelectedCoupon] = useState(null);
   const [grandTotal, setGrandTotal] = useState(0);
 
+  const isTablet = window.innerWidth <= 1024;
   const dispatch = useDispatch();
 
   const calculateTotal = () => {
@@ -42,6 +44,7 @@ const CartPayValue = () => {
     };
     dispatch(setEnableBuy());
     dispatch(setPaymentDetails(buyItems));
+    dispatch(setShowCart(false));
   };
 
   const handleCouponSelect = (coupon) => {
