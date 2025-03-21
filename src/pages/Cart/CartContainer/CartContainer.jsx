@@ -5,11 +5,16 @@ import CartAddedItems from "../CartAddedItems/CartAddedItems";
 
 const CartContainer = () => {
   const items = useSelector((store) => store.cart.items);
-
+  const isMobilePortrait = window.matchMedia(
+    "(max-width: 576px) and (orientation: portrait)"
+  ).matches;
   return (
     <>
       <div
-        style={{ borderRight: items.length > 0 ? "1px solid black" : "none" }}
+        style={{
+          borderRight:
+            items.length > 0 && !isMobilePortrait ? "1px solid black" : "none",
+        }}
       >
         {items.length > 0 ? (
           <div className="cart-items-scrollable">

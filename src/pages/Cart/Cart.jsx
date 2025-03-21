@@ -12,6 +12,7 @@ const Cart = () => {
   const dispatch = useDispatch();
   const cartRef = useRef(null);
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 576);
   const [position, setPosition] = useState({
     x: (window.innerWidth - 550) / 2,
     y: (window.innerHeight - 600) / 2,
@@ -25,6 +26,7 @@ const Cart = () => {
   };
 
   const handleMouseDown = (e) => {
+    if (isMobile) return; // Disable dragging on mobile
     setDragging(true);
     const rect = cartRef.current.getBoundingClientRect();
     setOffset({ x: e.clientX - rect.left, y: e.clientY - rect.top });
@@ -32,7 +34,7 @@ const Cart = () => {
 
   const handleMouseMove = useCallback(
     (e) => {
-      if (!dragging) return;
+      if (!dragging || isMobile) return;
       setPosition({
         x: Math.max(0, Math.min(window.innerWidth - 550, e.clientX - offset.x)),
         y: Math.max(
@@ -41,7 +43,7 @@ const Cart = () => {
         ),
       });
     },
-    [dragging, offset]
+    [dragging, offset, isMobile]
   );
 
   const handleMouseUp = useCallback(() => {
@@ -58,11 +60,26 @@ const Cart = () => {
     };
   }, [handleMouseMove, handleMouseUp]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 576);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div
       className="cart-main-container"
       ref={cartRef}
-      style={{ top: `${position.y}px`, left: `${position.x}px` }}
+      style={{
+        top: isMobile ? "50%" : `${position.y}px`,
+        left: isMobile ? "50%" : `${position.x}px`,
+        transform: isMobile ? "translate(-50%, -50%)" : "none",
+      }}
       onMouseDown={handleMouseDown}
     >
       <div className="cart-logo-container">

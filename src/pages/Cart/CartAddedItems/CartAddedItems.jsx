@@ -10,7 +10,8 @@ import {
   setWishlistItem,
 } from "../../../redux/wishListSlice/wishListItems";
 
-const CartAddedItems = (item) => {
+const CartAddedItems = ({ item }) => {
+  if (!item) return null;
   const {
     id,
     name,
@@ -22,11 +23,12 @@ const CartAddedItems = (item) => {
     image,
     alt,
     quantity,
-  } = item || {};
-
-  const WishlistItems = useSelector((store) => store.wishlist.wishlistItem);
+  } = item;
+  console.log(item);
 
   const dispatch = useDispatch();
+  const WishlistItems = useSelector((store) => store.wishlist.wishlistItem);
+
   const isInWishlist = WishlistItems.some((item) => item.id === id);
 
   const handleDecrease = () => {

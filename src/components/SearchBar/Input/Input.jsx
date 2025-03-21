@@ -23,7 +23,7 @@ const Input = () => {
   const handleSearchInput = (e) => {
     e.preventDefault();
     if (inputValue.trim().length > 0) {
-      dispatch(setSearchItem(inputValue)); // Dispatch the search query
+      dispatch(setSearchItem(inputValue));
     }
   };
 

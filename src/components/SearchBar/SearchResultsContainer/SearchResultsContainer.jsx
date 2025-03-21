@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../../styles/styleComponents/SearchBar/SearchResults/searchResults.css";
+import "../../../styles/styleComponents/SearchBar/SearchResultsContainer/searchResultsContainer.css";
 import data from "../../../data/products.json";
 import { useDispatch, useSelector } from "react-redux";
 import { setSearchResults } from "../../../redux/searchSlice";

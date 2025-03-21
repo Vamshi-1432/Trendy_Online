@@ -15,3 +15,35 @@
 .wishlist-main-container:active {
   cursor: grabbing;
 }
+
+/* Mobile Portrait Mode */
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+  .wishlist-main-container {
+    background-color: #b6b9c0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--bg-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+  }
+
+  .wishlist-main-container:active {
+    cursor: default;
+  }
+
+  /* Center the container in portrait mode */
+  .wishlist-main-container.centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) {}
+ @media only screen and (min-width: 1024px) and (max-width: 1440px) { */

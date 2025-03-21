@@ -5,7 +5,7 @@ import arrow from "../../../images/button.png";
 import { setAddCartItems } from "../../../redux/cartSlice/cartSlice";
 import { removeWishlistItem } from "../../../redux/wishListSlice/wishListItems";
 
-const WishListAddedItems = (listItems) => {
+const WishListAddedItems = ({ listItems }) => {
   const {
     id,
     name,
@@ -16,8 +16,8 @@ const WishListAddedItems = (listItems) => {
     discount,
     image,
     alt,
-  } = listItems.props || {};
-
+  } = listItems || {};
+  console.log(listItems);
   const dispatch = useDispatch();
 
   const handleAddToCart = (book) => {

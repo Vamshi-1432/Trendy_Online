@@ -53,16 +53,17 @@
 
 @media only screen and (max-width: 576px) and (orientation: portrait) {
   .input-outer-container {
-    width: 200px;
+    width: 300px;
     position: absolute;
     margin-right: 70px;
     padding: 2px;
+    margin-top: 45%;
   }
 
   .input-box {
     width: 100%;
     font-family: "Times New Roman", Times, serif;
-    padding: 0.2rem;
+    /* padding: 0.3rem; */
     border-radius: 50px;
     background: transparent;
     color: var(--font-color);
@@ -73,15 +74,43 @@
   .input-buttons {
     align-items: center;
     font-size: 28px;
-    position: relative;
+    position: absolute;
     color: var(--font-color);
     background: none;
     border: none;
-    gap: 1px;
     justify-content: flex-start;
+    font-size: 25px;
+  }
+
+  .input-buttons ion-icon {
+    margin-bottom: 1px;
   }
 }
-/* @media only screen and (min-width: 576px) {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .input-box {
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    padding: 0.3rem;
+    border-radius: 50px;
+    background: transparent;
+    color: var(--font-color);
+    font-weight: 800;
+  }
+
+  .input-buttons {
+    align-items: center;
+    font-size: 25px;
+    position: absolute;
+    color: var(--font-color);
+    background: none;
+    border: none;
+    justify-content: flex-start;
+  }
+
+  .input-buttons ion-icon {
+    gap: 0.5px;
+  }
+}
+
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 * @media only screen and (min-width: 1024px) and (max-width: 1440px) {  */

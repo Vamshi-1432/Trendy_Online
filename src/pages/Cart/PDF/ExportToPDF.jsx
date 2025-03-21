@@ -140,7 +140,7 @@ const PDFDocument = (orderData) => {
   //   orderData.total !== orderData.grandTotal
   //     ? (orderData.total - orderData.grandTotal).toFixed(2)
   //     : "0.00";
-
+  const items = orderData.items || [];
   return (
     <Document>
       <Page size="A4" style={styles.page}>
@@ -208,7 +208,7 @@ const PDFDocument = (orderData) => {
               </Text>
               <Text style={[styles.tableCell, styles.unitPrice]}>AMOUNT</Text>
             </View>
-            {orderData.items.map((item, index) => (
+            {items.map((item, index) => (
               <View key={index} style={styles.tableRow}>
                 <Text style={[styles.tableCell, styles.description]}>
                   {item.name}

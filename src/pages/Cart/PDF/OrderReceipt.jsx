@@ -13,7 +13,7 @@ const OrderReceipt = () => {
     postcode,
   } = useSelector((store) => store.buy.shippingDetails);
   const items = useSelector((store) => store.cart.items);
-  console.log(items);
+  // console.log(items);
   // const { title, alt, discount, image, name, originalPrice, price, quantity } =
   //   items;
   const { receiptId, total, deliveryCharges, grandTotal } = useSelector(
