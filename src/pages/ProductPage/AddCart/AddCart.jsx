@@ -8,7 +8,7 @@ import {
 } from "../../../redux/wishListSlice/wishListItems";
 import { setAddCartItems } from "../../../redux/cartSlice/cartSlice";
 
-const AddCart = (product) => {
+const AddCart = ({ product }) => {
   const [wishlistStatus, setWishlistStatus] = useState({});
   const {
     id,
