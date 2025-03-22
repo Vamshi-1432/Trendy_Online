@@ -72,6 +72,11 @@
     /* align-items: center; */
   }
 
+  .wishlist-addedItems-container {
+    overflow-y: auto;
+    scrollbar-width: none;
+    width: 90%;
+  }
   .wishList-inner-container ion-icon {
     font-size: 30px;
   }

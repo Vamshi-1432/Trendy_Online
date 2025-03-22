@@ -99,12 +99,16 @@ const Header = () => {
                   <div onClick={handleShowWishlist}>
                     <ion-icon name="heart" />
                   </div>
+
                   <img
                     src={cart}
                     alt="cart"
                     className="cart-image"
                     onClick={handleCart}
                   />
+                  <div className="header-log-out" onClick={handleLogOut}>
+                    <ion-icon name="person-circle-outline" />
+                  </div>
                 </div>
               </ul>
             </nav>

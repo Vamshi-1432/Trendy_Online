@@ -3,7 +3,6 @@
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #e0e0e0;
   height: 620px;
   width: 60%;
   border-radius: 5px;
@@ -11,7 +10,6 @@
 }
 
 .menu-tablets-image-container1 {
-  border-right: 1px solid #e0e0e0;
   height: 100%;
   width: 15%;
   display: block;
