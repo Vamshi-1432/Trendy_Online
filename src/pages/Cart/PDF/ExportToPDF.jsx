@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const PDFDocument = (orderData) => {
+const PDFDocument = ({ orderData }) => {
   // Calculate discount if total and grand total are different
   // const discountAmount =
   //   orderData.total !== orderData.grandTotal
@@ -280,7 +280,7 @@ const PDFDocument = (orderData) => {
 };
 
 // Export component that triggers PDF download
-const ExportToPDF = (orderData) => (
+const ExportToPDF = ({ orderData }) => (
   <PDFDownloadLink
     document={<PDFDocument orderData={orderData} />}
     fileName={`order_receipt_${orderData.receiptId}.pdf`}
