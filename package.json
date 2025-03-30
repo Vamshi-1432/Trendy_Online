@@ -6,8 +6,10 @@
     "@emailjs/browser": "^4.4.1",
     "@react-pdf/renderer": "^4.1.6",
     "@reduxjs/toolkit": "^2.4.0",
+    "@testing-library/user-event": "^14.4.3",
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
+    "ionicons": "^7.4.0",
     "qrcode.react": "^4.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -15,8 +17,8 @@
     "react-icons-kit": "^2.0.0",
     "react-qr-code": "^2.0.15",
     "react-redux": "^9.1.2",
-    "react-router": "^7.1.0",
-    "react-router-dom": "^7.1.0",
+    "react-router": "^7.4.1",
+    "react-router-dom": "^7.4.1",
     "react-scripts": "5.0.1",
     "redux": "^5.0.1",
     "web-vitals": "^4.2.4"
@@ -39,9 +41,23 @@
       "last 1 safari version"
     ]
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|svg)$": "./src/config/fileMock.js",
+      "\\.(css|scss)$": "identity-obj-proxy"
+    }
+  },
   "devDependencies": {
+    "@babel/core": "^7.26.10",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
     "@svgr/webpack": "^8.1.0",
-    "globals": "^16.0.0"
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "babel-jest": "^29.7.0",
+    "globals": "^16.0.0",
+    "redux-mock-store": "^1.5.5"
   }
 }

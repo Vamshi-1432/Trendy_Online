@@ -1,16 +1,75 @@
-import React from "react";
-import PropTypes from "prop-types"; // Import PropTypes
-import { useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+// import React, { Fragment, useEffect, useState } from "react";
+// import { Route, Routes, Navigate } from "react-router-dom";
+// import { useDispatch, useSelector } from "react-redux";
+// import { setValidLoginUser } from "./redux/loginSlice";
+// import "./App.css";
+// import Header from "./components/Header/Header";
+// import Footer from "./components/Footer/Footer";
+// import DarkMode from "./components/DarkMode/DarkMode";
+// import LogUser from "./pages/LogUser/LogUser";
+// import Loading from "./components/Items/Loading/Loading";
+// import Main from "./components/Main/Main";
+// import MobilePage from "./pages/ProductPage/Products/MobilePage/MobilePage";
+// import TabletsPage from "./pages/ProductPage/Products/TabletsPage/TabletsPage";
+// import LaptopsPage from "./pages/ProductPage/Products/LaptopsPage/LaptopsPage";
+// import CamerasPage from "./pages/ProductPage/Products/CamerasPage/CamerasPage";
 
-const ProtectedRoute = ({ children }) => {
-  const isAuthenticated = useSelector((state) => state.login.validLoginUser);
+// function App() {
+//   const dispatch = useDispatch();
+//   const isAuthenticated = useSelector((state) => state.login.validLoginUser);
+//   const [loading, setLoading] = useState(true);
 
-  return isAuthenticated ? children : <Navigate to="/login" />;
-};
+//   useEffect(() => {
+//     const loggedInStatus = localStorage.getItem("loggedIn");
+//     if (loggedInStatus === "true") {
+//       dispatch(setValidLoginUser(true));
+//     }
+//     setLoading(false);
+//   }, [dispatch]);
 
-ProtectedRoute.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+//   if (loading) {
+//     return <Loading />;
+//   }
 
-export default ProtectedRoute;
+//   return (
+//     <Fragment>
+//       <DarkMode />
+//       <Routes>
+//         <Route path="/login" element={<LogUser />} />
+//         <Route
+//           path="/"
+//           element={
+//             isAuthenticated ? (
+//               <>
+//                 <Header />
+//                 <Main />
+//                 <Footer />
+//               </>
+//             ) : (
+//               <Navigate to="/login" replace />
+//             )
+//           }
+//         />
+//         <Route
+//           path="/mobiles"
+//           element={isAuthenticated ? <MobilePage /> : <Navigate to="/login" replace />}
+//         />
+//         <Route
+//           path="/tablets"
+//           element={isAuthenticated ? <TabletsPage /> : <Navigate to="/login" replace />}
+//         />
+//         <Route
+//           path="/laptops"
+//           element={isAuthenticated ? <LaptopsPage /> : <Navigate to="/login" replace />}
+//         />
+//         <Route
+//           path="/cameras"
+//           element={isAuthenticated ? <CamerasPage /> : <Navigate to="/login" replace />}
+//         />
+//         <Route path="*" element={<h1>Page Not Found</h1>} />
+//       </Routes>
+//     </Fragment>
+//   );
+// }
+
+// export default App;

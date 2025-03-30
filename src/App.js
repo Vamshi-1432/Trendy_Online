@@ -1,14 +1,12 @@
-import React from "react";
+import React, { Fragment, useEffect, useState } from "react";
+import { Route, Routes, Navigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { setValidLoginUser } from "./redux/loginSlice";
 import "./App.css";
-import { Fragment, useEffect, useState } from "react";
-import Header from "../src/components/Header/Header";
-import Footer from "../src/components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import DarkMode from "./components/DarkMode/DarkMode";
 import LogUser from "./pages/LogUser/LogUser";
-import { Route, Routes } from "react-router";
-import { useDispatch } from "react-redux";
-import ProtectedRoute from "./redux/ProtectedRoute";
-import { setValidLoginUser } from "./redux/loginSlice";
 import Loading from "./components/Items/Loading/Loading";
 import Main from "./components/Main/Main";
 import MobilePage from "./pages/ProductPage/Products/MobilePage/MobilePage";
@@ -18,6 +16,7 @@ import CamerasPage from "./pages/ProductPage/Products/CamerasPage/CamerasPage";
 
 function App() {
   const dispatch = useDispatch();
+  const isAuthenticated = useSelector((state) => state.login.validLoginUser);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -39,49 +38,40 @@ function App() {
         <Route path="/login" element={<LogUser />} />
         <Route
           path="/"
-          exact
           element={
-            <ProtectedRoute>
-              <Header />
-              <Main />
-              <Footer />
-            </ProtectedRoute>
+            isAuthenticated ? (
+              <>
+                <Header />
+                <Main />
+                <Footer />
+              </>
+            ) : (
+              <Navigate to="/login" replace />
+            )
           }
         />
         <Route
           path="/mobiles"
-          exact
           element={
-            <ProtectedRoute>
-              <MobilePage />
-            </ProtectedRoute>
+            isAuthenticated ? <MobilePage /> : <Navigate to="/login" replace />
           }
         />
         <Route
           path="/tablets"
-          exact
           element={
-            <ProtectedRoute>
-              <TabletsPage />
-            </ProtectedRoute>
+            isAuthenticated ? <TabletsPage /> : <Navigate to="/login" replace />
           }
         />
         <Route
           path="/laptops"
-          exact
           element={
-            <ProtectedRoute>
-              <LaptopsPage />
-            </ProtectedRoute>
+            isAuthenticated ? <LaptopsPage /> : <Navigate to="/login" replace />
           }
         />
         <Route
           path="/cameras"
-          exact
           element={
-            <ProtectedRoute>
-              <CamerasPage />
-            </ProtectedRoute>
+            isAuthenticated ? <CamerasPage /> : <Navigate to="/login" replace />
           }
         />
         <Route path="*" element={<h1>Page Not Found</h1>} />
