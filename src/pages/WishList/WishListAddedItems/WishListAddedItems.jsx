@@ -16,8 +16,7 @@ const WishListAddedItems = ({ listItems }) => {
     discount,
     image,
     alt,
-  } = listItems || {};
-  console.log(listItems);
+  } = listItems || {}; 
   const dispatch = useDispatch();
 
   const handleAddToCart = (book) => {

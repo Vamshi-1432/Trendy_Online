@@ -13,6 +13,7 @@ import MobilePage from "./pages/ProductPage/Products/MobilePage/MobilePage";
 import TabletsPage from "./pages/ProductPage/Products/TabletsPage/TabletsPage";
 import LaptopsPage from "./pages/ProductPage/Products/LaptopsPage/LaptopsPage";
 import CamerasPage from "./pages/ProductPage/Products/CamerasPage/CamerasPage";
+import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
 
 function App() {
   const dispatch = useDispatch();
@@ -74,7 +75,7 @@ function App() {
             isAuthenticated ? <CamerasPage /> : <Navigate to="/login" replace />
           }
         />
-        <Route path="*" element={<h1>Page Not Found</h1>} />
+        <Route path="*" element={<ErrorBoundary />} />
       </Routes>
     </Fragment>
   );

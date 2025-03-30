@@ -113,8 +113,6 @@ export const SignInForm = () => {
       setStatusMessage("Email doesn't exist.");
       setValidUser(false);
     }
-
-    console.log("Email exists:", isEmailExists);
   };
 
   return (

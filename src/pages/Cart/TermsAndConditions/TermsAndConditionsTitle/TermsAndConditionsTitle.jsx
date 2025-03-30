@@ -7,8 +7,7 @@ const TermsAndConditionsTitle = () => {
   const [showDetails, setShowDetails] = useState(null);
   const handleDisplayDetails = (id) => {
     setShowDetails((prevId) => (prevId === id ? null : id));
-  };
-  console.log(data);
+  }; 
 
   return (
     <div className="term-details-container">

@@ -23,8 +23,7 @@ const CartAddedItems = ({ item }) => {
     image,
     alt,
     quantity,
-  } = item;
-  console.log(item);
+  } = item; 
 
   const dispatch = useDispatch();
   const WishlistItems = useSelector((store) => store.wishlist.wishlistItem);

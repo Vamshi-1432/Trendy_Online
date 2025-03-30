@@ -13,8 +13,7 @@ const ProceedPayment = ({ enablePay }) => {
   const [showTerms, setShowTerms] = useState(false);
   const dispatch = useDispatch();
 
-  const paymentAmount = useSelector((store) => store.buy.paymentDetails);
-  console.log(paymentAmount);
+  const paymentAmount = useSelector((store) => store.buy.paymentDetails); 
 
   // Extract or calculate total, deliveryCharges, and grandTotal
   const total = paymentAmount.total || 0;

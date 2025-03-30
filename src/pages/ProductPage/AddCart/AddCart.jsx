@@ -40,8 +40,7 @@ const AddCart = ({ product }) => {
   const handleAddCart = (mobile) => {
     dispatch(setAddCartItems(mobile));
   };
-
-  console.log(product);
+ 
   return (
     <div className="add-cart-container">
       <img

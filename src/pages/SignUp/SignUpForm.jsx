@@ -22,7 +22,8 @@ const SignUpForm = () => {
   const [userCreated, setUserCreated] = useState(false);
 
   const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-  const passwordRegex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/;
+  const passwordRegex =
+    /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/;
 
   const dispatch = useDispatch();
 
@@ -58,43 +59,6 @@ const SignUpForm = () => {
   const handleShowCreatePassword = () => {
     setShowCreatePassword(!showCreatePassword);
   };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   const existingUser = localStorage.getItem("user");
-  //   console.log(existingUser);
-  //   const isEmailUnique = existingUser.email === email ? true : false;
-  //   if (!email || !password || !confirmPassword) {
-  //     setEmailError(!email ? "Email is required" : emailError);
-  //     setPasswordError(!password ? "Password is required." : passwordError);
-  //     setConfirmPasswordError(
-  //       !confirmPassword
-  //         ? "Confirm password is required."
-  //         : confirmPasswordError
-  //     );
-  //     return;
-  //   }
-
-  //   if (!isEmailUnique) {
-  //     setEmailError("User already exists.");
-  //     return;
-  //   }
-
-  //   const newUser = { email, password };
-
-  //   existingUser.push(newUser);
-  //   localStorage.setItem("user", JSON.stringify(existingUser));
-
-  //   setUserCreated(true);
-  //   setFullname("");
-  //   setEmail("");
-  //   setPassword("");
-  //   setConfirmPassword("");
-  //   setEmailError("");
-  //   setPasswordError("");
-  //   setConfirmPasswordError("");
-  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -167,9 +131,7 @@ const SignUpForm = () => {
         value={fullname}
         onChange={handleFullname}
       />
-      {/* {fullnameMessage && (
-        <p className="login-error-message">{fullnameMessage}</p>
-      )} */}
+
       <label className="signup-label-email">Email</label>
       <input
         className="signup-input-email"

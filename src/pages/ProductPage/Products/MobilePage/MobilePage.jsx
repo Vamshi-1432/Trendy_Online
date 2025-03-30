@@ -6,8 +6,7 @@ import ProductDetails from "../../ProductDetails/ProductDetails";
 import AddCart from "../../AddCart/AddCart";
 
 const MobilePage = () => {
-  const selectedItem = useSelector((store) => store.items.selectedItem);
-  console.log(selectedItem);
+  const selectedItem = useSelector((store) => store.items.selectedItem); 
 
   const [image, setImage] = useState(selectedItem.imageGallery[0]);
 

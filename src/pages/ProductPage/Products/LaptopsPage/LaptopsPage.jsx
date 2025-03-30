@@ -13,8 +13,7 @@ const LaptopsPage = () => {
 
   const handleImageClick = (image) => {
     setImage(image);
-  };
-  console.log(selectedItem);
+  }; 
   return (
     <div className="menu-laptops-container">
       <div className="menu-laptops-image-container1">
